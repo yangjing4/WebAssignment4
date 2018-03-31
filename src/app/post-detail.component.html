@@ -1,0 +1,12 @@
+<div *ngIf="post">
+    <h2>Editing {{post.title | uppercase}} post</h2>
+    <label>Title: </label><br>
+    <input [(ngModel)]="post.title" placeholder="title" /><br>
+    <label>Author: </label><br>
+    <input [(ngModel)]="post.author" placeholder="author"/><br>
+    <label>Time: </label><br>  {{post.date}}<br>
+    <label>Post: </label><br>
+    <input [(ngModel)]="post.post" placeholder="post"/>
+    <button (click)="save()">Save</button>
+</div>
+
